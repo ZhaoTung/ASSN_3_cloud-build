@@ -1,13 +1,9 @@
 from flask import Flask, render_template, request
 import urllib.request
 import json
-import webapp2
 
 
-app = webapp2.WSGIApplication([
-    ('/')
-], debug=True)
-
+app = Flask(__name__)
 
 @app.route('/')
 def main():
